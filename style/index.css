@@ -207,6 +207,37 @@
     position: absolute;
 }
 
+/* footer-section-style */
+
+.footer-section{
+    display: flex;
+    justify-content: space-evenly;
+    /* flex: 1; */
+    padding: 50px 160px;
+}
+
+.footer-contaner1 p{
+    padding:10px 0 ;
+}
+
+.footer-contaner2,.footer-contaner3 {
+    list-style: none;
+}
+
+.footer-section li {
+    padding: 10px;
+}
+
+.footer-section li a{
+    text-decoration: none;
+}
+
+.footer-contaner4 img{
+    padding: 0 10px;
+}
+
+
+
 
 /* animation */
 
@@ -250,6 +281,12 @@
     .togather button{
         width: 15%;
         font-size: 0.7rem;
+    }
+    .footer-section{
+        flex-direction: column;
+    }
+    .footer-section div{
+        margin-top: 10px;
     }
 
 }
