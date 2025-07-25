@@ -79,6 +79,46 @@
     color:#8987A1;
 }
 
+/* cart-section-style */
+
+.card-section{
+    margin-top: 100px;
+    text-align: center;
+
+}
+
+.card-heading{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.card-text{
+    font-size: 1.25rem;
+    margin: 20px;
+}
+
+.card-contaner{
+        margin-top: 50px;
+}
+
+.card-item{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+
+.card-contant{
+    margin-top: 25px;
+    font-size: 1.25rem;
+    font-weight: 300d
+}
+
+.card-price{
+    padding: 10px 0;
+    font-weight: bold;
+}
+
 
 /* responsiveness */
 
@@ -93,5 +133,9 @@
     .banner-left{
         margin: 20px 10px;
     }
-    
+    .card-item{
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+
 }
