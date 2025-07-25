@@ -164,6 +164,50 @@
         animation: spin 5s linear 0s infinite;
 }
 
+/* color-bunch-style */
+
+.colorful-bunch-section{
+    background-image: url('/images/news-letter-bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.colorful-bunch-container{
+    position: absolute;
+    max-width: 830px;
+}
+
+.colorful-bunch-heading{
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.colorful-bunch-container input{
+    padding: 15px 400px 15px 10px;
+    font-size: 1rem;
+    color: #8987A1;
+    border: none;
+    position: relative;
+}
+
+.colorful-bunch-container button{
+    background-color: #E95A08;
+    padding: 15px 25px;
+    border: none;
+    font-size: 1rem;
+    color: white;
+    position: absolute;
+}
+
+
 /* animation */
 
 @keyframes spin{
@@ -192,12 +236,20 @@
         grid-template-columns: repeat(2,1fr);
         gap: 10px;
     }
-.flower-store-contantner{
+    .flower-store-contantner{
         flex-direction: column;
     }
 
     .spin{
         display: none;
+    }
+    .togather input{
+        width: 55%;
+        font-size: 0.7rem;
+    }
+    .togather button{
+        width: 15%;
+        font-size: 0.7rem;
     }
 
 }
