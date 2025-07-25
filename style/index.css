@@ -119,6 +119,61 @@
     font-weight: bold;
 }
 
+/* flower-section-style */
+
+.flower-store-section{
+    margin: 120px auto;
+}
+
+.flower-store-contantner{
+    display: flex;
+    gap: 60px;
+}
+
+.flower-store-left-part{
+        position: relative;
+        display: inline-block;
+}
+
+.flower-store-right-part{
+    margin: 30px;
+}
+
+.flower-store-heading{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.flower-store-text-list{
+    font-size: 1.6rem;
+    color: #8987A1;
+}
+
+.flower-store-text{
+    margin: 30px;
+}
+
+.trasted-badge{
+    max-width: 280px;
+    position: absolute;
+    top: -120px;
+    right: -100px;
+}
+
+.spin{
+        animation: spin 5s linear 0s infinite;
+}
+
+/* animation */
+
+@keyframes spin{
+    from{
+        transform:rotate(0deg)
+    }
+    to{
+        transform:rotate(360deg)
+    }
+}
 
 /* responsiveness */
 
@@ -136,6 +191,13 @@
     .card-item{
         grid-template-columns: repeat(2,1fr);
         gap: 10px;
+    }
+.flower-store-contantner{
+        flex-direction: column;
+    }
+
+    .spin{
+        display: none;
     }
 
 }
