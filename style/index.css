@@ -111,7 +111,6 @@
 .card-contant{
     margin-top: 25px;
     font-size: 1.25rem;
-    font-weight: 300d
 }
 
 .card-price{
@@ -131,8 +130,8 @@
 }
 
 .flower-store-left-part{
-        position: relative;
-        display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .flower-store-right-part{
@@ -161,8 +160,99 @@
 }
 
 .spin{
-        animation: spin 5s linear 0s infinite;
+    animation: spin 5s linear 0s infinite;
 }
+
+/* flower-plant-style */
+
+.flower-plant-section{
+    margin: 60px auto;
+}
+
+.flower-plant-heading{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 20px;
+    text-align: center;
+}
+
+.flower-plant-text{
+    font-size: 1.25rem;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.flower-plant-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.flower-plant-left{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+    min-width: 30%;
+}
+
+.flower-plant-image.zabo{
+    flex: 2;
+    width: 60%;
+    height: 410px;
+}
+
+.flower-plant-text1 h2{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.flower-plant-text1 a{
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+}
+
+.flower-plant-text2 h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.flower-plant-text2 a{
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: white;
+}
+
+/* images-style */
+
+.flower-plant-image{
+    background-size: cover;
+    background-position: center;
+    height: 195px;
+    border-radius: 12px;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* background-image */
+
+.bloom{
+    background-image: url("../images/deal-bloom.png");
+}
+
+.ana{
+    background-image: url("../images/deal-ana.png");
+}
+
+.zabo{
+    background-image: url("../images/deal-zabo.png");
+}
+
+
 
 /* color-bunch-style */
 
@@ -190,21 +280,27 @@
     font-weight: 700;
 }
 
+.togather{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .colorful-bunch-container input{
-    padding: 15px 400px 15px 10px;
+    padding: 12px;
     font-size: 1rem;
     color: #8987A1;
     border: none;
-    position: relative;
+    width: 500px;
 }
 
 .colorful-bunch-container button{
     background-color: #E95A08;
-    padding: 15px 25px;
+    padding: 12px 25px;
     border: none;
     font-size: 1rem;
     color: white;
-    position: absolute;
 }
 
 /* footer-section-style */
@@ -212,7 +308,6 @@
 .footer-section{
     display: flex;
     justify-content: space-evenly;
-    /* flex: 1; */
     padding: 50px 160px;
 }
 
@@ -266,27 +361,38 @@
     .card-item{
         grid-template-columns: repeat(2,1fr);
         gap: 10px;
+        max-width: 100%;
     }
     .flower-store-contantner{
         flex-direction: column;
     }
-
     .spin{
         display: none;
     }
+    .flower-plant-section{
+        flex-direction: column;
+    }
+    .flower-plant-image{
+        width: 420px;
+        height: 195px;
+    }
+    .colorful-bunch-section{
+        width: 100%;
+    }
+    .togather{
+        align-items: center;
+    }
     .togather input{
         width: 55%;
-        font-size: 0.7rem;
     }
     .togather button{
-        width: 15%;
-        font-size: 0.7rem;
+        width: 25%;
     }
     .footer-section{
         flex-direction: column;
     }
-    .footer-section div{
-        margin-top: 10px;
+    .footer-contaner4 {
+        width: 80%;
     }
 
 }
